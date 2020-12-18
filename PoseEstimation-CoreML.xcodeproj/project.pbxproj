@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F8A924B257264E500563A99 /* model_cpm.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A924A257264E500563A99 /* model_cpm.mlmodel */; };
+		4F8A924D257264F100563A99 /* model_hourglass.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A924C257264F100563A99 /* model_hourglass.mlmodel */; };
+		4F8A924E257264F100563A99 /* model_hourglass.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A924C257264F100563A99 /* model_hourglass.mlmodel */; };
+		4F8A924F257264F300563A99 /* model_cpm.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A924A257264E500563A99 /* model_cpm.mlmodel */; };
+		554F14772202B07B00B828B0 /* PoseEstimation_CoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F14762202B07B00B828B0 /* PoseEstimation_CoreMLTests.swift */; };
+		554F14822202B68300B828B0 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F14812202B68300B828B0 /* UIImage+CVPixelBuffer.swift */; };
+		554F14832202B82600B828B0 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F14812202B68300B828B0 /* UIImage+CVPixelBuffer.swift */; };
+		554F14842202BB7200B828B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557F531920ED252400CFCCD7 /* Assets.xcassets */; };
+		555B477421F61234009026AB /* DrawingJointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B477321F61234009026AB /* DrawingJointView.swift */; };
+		557F531320ED252100CFCCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F531220ED252100CFCCD7 /* AppDelegate.swift */; };
+		557F531520ED252100CFCCD7 /* JointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F531420ED252100CFCCD7 /* JointViewController.swift */; };
+		557F531820ED252100CFCCD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557F531620ED252100CFCCD7 /* Main.storyboard */; };
+		557F531A20ED252400CFCCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557F531920ED252400CFCCD7 /* Assets.xcassets */; };
+		557F531D20ED252400CFCCD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557F531B20ED252400CFCCD7 /* LaunchScreen.storyboard */; };
+		557F532720ED25B000CFCCD7 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F532420ED25AF00CFCCD7 /* VideoCapture.swift */; };
+		557F532820ED25B000CFCCD7 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F532520ED25AF00CFCCD7 /* Measure.swift */; };
+		55AAFB1C21128863000B21A3 /* HeatmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AAFB1B21128863000B21A3 /* HeatmapViewController.swift */; };
+		55AAFB1E21128AB6000B21A3 /* DrawingHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AAFB1D21128AB6000B21A3 /* DrawingHeatmapView.swift */; };
+		714087F32302E7AC00F7EDF4 /* PoseMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714087F22302E7AC00F7EDF4 /* PoseMatchingViewController.swift */; };
+		714D590F2377F87A00BBE1DC /* HeatmapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D590E2377F87A00BBE1DC /* HeatmapsViewController.swift */; };
+		7165F7592271772A0010F164 /* StillImageHeatmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165F7582271772A0010F164 /* StillImageHeatmapViewController.swift */; };
+		71EF2DC122C3662A009391C8 /* MovingAverageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF2DC022C3662A009391C8 /* MovingAverageFilter.swift */; };
+		71EF2DC322C469FD009391C8 /* HeatmapPostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF2DC222C469FD009391C8 /* HeatmapPostProcessor.swift */; };
+		71EF2DC522C4878D009391C8 /* PredictedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF2DC422C4878D009391C8 /* PredictedPoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554F14792202B07B00B828B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557F530720ED252100CFCCD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557F530E20ED252100CFCCD7;
+			remoteInfo = "PoseEstimation-CoreML";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F8A924A257264E500563A99 /* model_cpm.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_cpm.mlmodel; sourceTree = "<group>"; };
+		4F8A924C257264F100563A99 /* model_hourglass.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_hourglass.mlmodel; sourceTree = "<group>"; };
+		554F14742202B07B00B828B0 /* PoseEstimation-CoreMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PoseEstimation-CoreMLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		554F14762202B07B00B828B0 /* PoseEstimation_CoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseEstimation_CoreMLTests.swift; sourceTree = "<group>"; };
+		554F14782202B07B00B828B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554F14812202B68300B828B0 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		555B477321F61234009026AB /* DrawingJointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingJointView.swift; sourceTree = "<group>"; };
+		557F530F20ED252100CFCCD7 /* PoseEstimation-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PoseEstimation-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		557F531220ED252100CFCCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		557F531420ED252100CFCCD7 /* JointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointViewController.swift; sourceTree = "<group>"; };
+		557F531720ED252100CFCCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		557F531920ED252400CFCCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		557F531C20ED252400CFCCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		557F531E20ED252400CFCCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557F532420ED25AF00CFCCD7 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		557F532520ED25AF00CFCCD7 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		55AAFB1B21128863000B21A3 /* HeatmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapViewController.swift; sourceTree = "<group>"; };
+		55AAFB1D21128AB6000B21A3 /* DrawingHeatmapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingHeatmapView.swift; sourceTree = "<group>"; };
+		714087F22302E7AC00F7EDF4 /* PoseMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseMatchingViewController.swift; sourceTree = "<group>"; };
+		714D590E2377F87A00BBE1DC /* HeatmapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapsViewController.swift; sourceTree = "<group>"; };
+		7165F7582271772A0010F164 /* StillImageHeatmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillImageHeatmapViewController.swift; sourceTree = "<group>"; };
+		71EF2DC022C3662A009391C8 /* MovingAverageFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingAverageFilter.swift; sourceTree = "<group>"; };
+		71EF2DC222C469FD009391C8 /* HeatmapPostProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapPostProcessor.swift; sourceTree = "<group>"; };
+		71EF2DC422C4878D009391C8 /* PredictedPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictedPoint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		554F14712202B07B00B828B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557F530C20ED252100CFCCD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		554F14752202B07B00B828B0 /* PoseEstimation-CoreMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				554F14762202B07B00B828B0 /* PoseEstimation_CoreMLTests.swift */,
+				554F14782202B07B00B828B0 /* Info.plist */,
+			);
+			path = "PoseEstimation-CoreMLTests";
+			sourceTree = "<group>";
+		};
+		554F148C2203057400B828B0 /* Joint View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				557F531420ED252100CFCCD7 /* JointViewController.swift */,
+				555B477321F61234009026AB /* DrawingJointView.swift */,
+			);
+			path = "Joint View Controller";
+			sourceTree = "<group>";
+		};
+		554F148D2203058100B828B0 /* Heatmap View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55AAFB1B21128863000B21A3 /* HeatmapViewController.swift */,
+				714D590E2377F87A00BBE1DC /* HeatmapsViewController.swift */,
+			);
+			path = "Heatmap View Controller";
+			sourceTree = "<group>";
+		};
+		554F148E2203059B00B828B0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71EF2DC422C4878D009391C8 /* PredictedPoint.swift */,
+				71EF2DC222C469FD009391C8 /* HeatmapPostProcessor.swift */,
+				71EF2DC022C3662A009391C8 /* MovingAverageFilter.swift */,
+				554F14812202B68300B828B0 /* UIImage+CVPixelBuffer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		557F530620ED252100CFCCD7 = {
+			isa = PBXGroup;
+			children = (
+				4F8A924A257264E500563A99 /* model_cpm.mlmodel */,
+				4F8A924C257264F100563A99 /* model_hourglass.mlmodel */,
+				557F531120ED252100CFCCD7 /* PoseEstimation-CoreML */,
+				554F14752202B07B00B828B0 /* PoseEstimation-CoreMLTests */,
+				557F531020ED252100CFCCD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557F531020ED252100CFCCD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557F530F20ED252100CFCCD7 /* PoseEstimation-CoreML.app */,
+				554F14742202B07B00B828B0 /* PoseEstimation-CoreMLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		557F531120ED252100CFCCD7 /* PoseEstimation-CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				557F531220ED252100CFCCD7 /* AppDelegate.swift */,
+				554F148C2203057400B828B0 /* Joint View Controller */,
+				554F148D2203058100B828B0 /* Heatmap View Controller */,
+				55AAFB1D21128AB6000B21A3 /* DrawingHeatmapView.swift */,
+				7165F75A227177320010F164 /* Still Image Heatmap View Controller */,
+				714087F42302E7B000F7EDF4 /* Pose Matching View Controller */,
+				554F148E2203059B00B828B0 /* Common */,
+				557F532420ED25AF00CFCCD7 /* VideoCapture.swift */,
+				557F532520ED25AF00CFCCD7 /* Measure.swift */,
+				557F531620ED252100CFCCD7 /* Main.storyboard */,
+				557F531920ED252400CFCCD7 /* Assets.xcassets */,
+				557F531B20ED252400CFCCD7 /* LaunchScreen.storyboard */,
+				557F531E20ED252400CFCCD7 /* Info.plist */,
+			);
+			path = "PoseEstimation-CoreML";
+			sourceTree = "<group>";
+		};
+		714087F42302E7B000F7EDF4 /* Pose Matching View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				714087F22302E7AC00F7EDF4 /* PoseMatchingViewController.swift */,
+			);
+			path = "Pose Matching View Controller";
+			sourceTree = "<group>";
+		};
+		7165F75A227177320010F164 /* Still Image Heatmap View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7165F7582271772A0010F164 /* StillImageHeatmapViewController.swift */,
+			);
+			path = "Still Image Heatmap View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		554F14732202B07B00B828B0 /* PoseEstimation-CoreMLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554F147D2202B07B00B828B0 /* Build configuration list for PBXNativeTarget "PoseEstimation-CoreMLTests" */;
+			buildPhases = (
+				554F14702202B07B00B828B0 /* Sources */,
+				554F14712202B07B00B828B0 /* Frameworks */,
+				554F14722202B07B00B828B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554F147A2202B07B00B828B0 /* PBXTargetDependency */,
+			);
+			name = "PoseEstimation-CoreMLTests";
+			productName = "PoseEstimation-CoreMLTests";
+			productReference = 554F14742202B07B00B828B0 /* PoseEstimation-CoreMLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		557F530E20ED252100CFCCD7 /* PoseEstimation-CoreML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557F532120ED252400CFCCD7 /* Build configuration list for PBXNativeTarget "PoseEstimation-CoreML" */;
+			buildPhases = (
+				557F530B20ED252100CFCCD7 /* Sources */,
+				557F530C20ED252100CFCCD7 /* Frameworks */,
+				557F530D20ED252100CFCCD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PoseEstimation-CoreML";
+			productName = "PoseEstimation-CoreML";
+			productReference = 557F530F20ED252100CFCCD7 /* PoseEstimation-CoreML.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		557F530720ED252100CFCCD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = tucan9389;
+				TargetAttributes = {
+					554F14732202B07B00B828B0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 557F530E20ED252100CFCCD7;
+					};
+					557F530E20ED252100CFCCD7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 557F530A20ED252100CFCCD7 /* Build configuration list for PBXProject "PoseEstimation-CoreML" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 557F530620ED252100CFCCD7;
+			productRefGroup = 557F531020ED252100CFCCD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557F530E20ED252100CFCCD7 /* PoseEstimation-CoreML */,
+				554F14732202B07B00B828B0 /* PoseEstimation-CoreMLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		554F14722202B07B00B828B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554F14842202BB7200B828B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557F530D20ED252100CFCCD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557F531D20ED252400CFCCD7 /* LaunchScreen.storyboard in Resources */,
+				557F531A20ED252400CFCCD7 /* Assets.xcassets in Resources */,
+				557F531820ED252100CFCCD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		554F14702202B07B00B828B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8A924E257264F100563A99 /* model_hourglass.mlmodel in Sources */,
+				4F8A924F257264F300563A99 /* model_cpm.mlmodel in Sources */,
+				554F14772202B07B00B828B0 /* PoseEstimation_CoreMLTests.swift in Sources */,
+				554F14832202B82600B828B0 /* UIImage+CVPixelBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557F530B20ED252100CFCCD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8A924B257264E500563A99 /* model_cpm.mlmodel in Sources */,
+				55AAFB1C21128863000B21A3 /* HeatmapViewController.swift in Sources */,
+				71EF2DC122C3662A009391C8 /* MovingAverageFilter.swift in Sources */,
+				557F531520ED252100CFCCD7 /* JointViewController.swift in Sources */,
+				7165F7592271772A0010F164 /* StillImageHeatmapViewController.swift in Sources */,
+				55AAFB1E21128AB6000B21A3 /* DrawingHeatmapView.swift in Sources */,
+				557F532720ED25B000CFCCD7 /* VideoCapture.swift in Sources */,
+				4F8A924D257264F100563A99 /* model_hourglass.mlmodel in Sources */,
+				555B477421F61234009026AB /* DrawingJointView.swift in Sources */,
+				714D590F2377F87A00BBE1DC /* HeatmapsViewController.swift in Sources */,
+				71EF2DC322C469FD009391C8 /* HeatmapPostProcessor.swift in Sources */,
+				554F14822202B68300B828B0 /* UIImage+CVPixelBuffer.swift in Sources */,
+				557F532820ED25B000CFCCD7 /* Measure.swift in Sources */,
+				714087F32302E7AC00F7EDF4 /* PoseMatchingViewController.swift in Sources */,
+				557F531320ED252100CFCCD7 /* AppDelegate.swift in Sources */,
+				71EF2DC522C4878D009391C8 /* PredictedPoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554F147A2202B07B00B828B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557F530E20ED252100CFCCD7 /* PoseEstimation-CoreML */;
+			targetProxy = 554F14792202B07B00B828B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		557F531620ED252100CFCCD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557F531720ED252100CFCCD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		557F531B20ED252400CFCCD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557F531C20ED252400CFCCD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		554F147B2202B07B00B828B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				INFOPLIST_FILE = "PoseEstimation-CoreMLTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.PoseEstimation-CoreMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseEstimation-CoreML.app/PoseEstimation-CoreML";
+			};
+			name = Debug;
+		};
+		554F147C2202B07B00B828B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				INFOPLIST_FILE = "PoseEstimation-CoreMLTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.PoseEstimation-CoreMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseEstimation-CoreML.app/PoseEstimation-CoreML";
+			};
+			name = Release;
+		};
+		557F531F20ED252400CFCCD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		557F532020ED252400CFCCD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		557F532220ED252400CFCCD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LVN7X66RF;
+				INFOPLIST_FILE = "PoseEstimation-CoreML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linkon.PoseEstimation-CoreML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		557F532320ED252400CFCCD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LVN7X66RF;
+				INFOPLIST_FILE = "PoseEstimation-CoreML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linkon.PoseEstimation-CoreML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		554F147D2202B07B00B828B0 /* Build configuration list for PBXNativeTarget "PoseEstimation-CoreMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554F147B2202B07B00B828B0 /* Debug */,
+				554F147C2202B07B00B828B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557F530A20ED252100CFCCD7 /* Build configuration list for PBXProject "PoseEstimation-CoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557F531F20ED252400CFCCD7 /* Debug */,
+				557F532020ED252400CFCCD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557F532120ED252400CFCCD7 /* Build configuration list for PBXNativeTarget "PoseEstimation-CoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557F532220ED252400CFCCD7 /* Debug */,
+				557F532320ED252400CFCCD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 557F530720ED252100CFCCD7 /* Project object */;
+}
