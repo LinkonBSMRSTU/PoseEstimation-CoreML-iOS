@@ -6,7 +6,7 @@
 
 This project is Pose Estimation on iOS with Core ML.<br>If you are interested in iOS + Machine Learning, visit [here](https://github.com/motlabs/iOS-Proejcts-with-ML-Models) you can see various DEMOs.<br>
 
-[한국어 README](https://github.com/tucan9389/PoseEstimation-CoreML/blob/master/README_kr.md)
+[README](https://github.com/tucan9389/PoseEstimation-CoreML/blob/master/README_kr.md)
 
 | Jointed Keypoints | Hatmaps | Still Image |
 | :-----: | :-----: | :-----: |
